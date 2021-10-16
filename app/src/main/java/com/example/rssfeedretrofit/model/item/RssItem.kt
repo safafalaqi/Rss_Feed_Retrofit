@@ -32,8 +32,4 @@ class RssItem @JvmOverloads constructor(
     @param:Element(name = "content")
    var mediacontent: String? = null
 
-) : Serializable {
-
-
-}
-
+) : Serializable

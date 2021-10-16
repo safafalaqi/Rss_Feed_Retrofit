@@ -43,7 +43,7 @@ class RVAdapter(private val feeds: MutableList<RssItem>,val context: Context): R
 
         }
         //if you click internet picture it will take you to the question page
-        holder.binding.btInternet.setOnClickListener{
+        holder.binding.imageButton.setOnClickListener{
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(link))
             context.startActivity(browserIntent)
         }
