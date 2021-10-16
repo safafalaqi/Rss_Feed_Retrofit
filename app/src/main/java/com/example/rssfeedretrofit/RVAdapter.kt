@@ -47,6 +47,10 @@ class RVAdapter(private val feeds: MutableList<RssItem>,val context: Context): R
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(link))
             context.startActivity(browserIntent)
         }
+        holder.itemView.setOnClickListener{
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(link))
+            context.startActivity(browserIntent)
+        }
 
     }
 
